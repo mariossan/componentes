@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    background: #123456;
+    padding: 60px 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container > div {
+    float: left;
+}
+
+.information {
+    width: 70%;
+    padding-left: 2%;
+}
+
+.information p {
+    line-height: 23px;
+    margin-top: 14px;
+}
+
+.information h2 {
+    font-weight: normal;
+}
+
+.button-container {
+    width: 30%;
+}
+
+.button-container > button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #3c9aea;
+    text-transform: uppercase;
+    border: initial;
+    cursor: pointer;
+    margin-top: 7%;
+}
+
+.button-container > button:hover {
+    background: #000204;
+}
+
+.button-container > button:focus {
+    outline-color: RED;
+    outline-style: auto;
+    outline-width: 0px;
+}
+
+.container::before {
+    content: "<";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 5px;
+    color: #000;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.container::after {
+    content: ">";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    right: 5px;
+    color: #000;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
