@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0066ff;
+}
+
+.component {
+    width: 244px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    animation: 1s presentacion linear forwards; 
+    display: inline-block;
+    overflow: hidden;
+}
+.price {
+    color: #b12603;
+    font-size: 1rem;
+}
+
+.price + span {
+    font-size: 0.7rem;
+}
+
+.description {
+    margin-top: 10px;
+}
+.description > p {
+    font-size: 0.75rem;
+    margin: 10px 0;
+    line-height: 16px;
+}
+
+.description > p > span {
+    color: #076007;
+    font-weight: bold;
+}
+
+.description > p.important_note {
+    font-size: 0.65rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.description > p.important_note::before {
+    content: "¡";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: #0066ff;
+    left: 10px;
+    top: 0px;
+    font-size: 0.8rem;
+}
+
+.status {
+    margin-top: 30px;
+    color: #076007;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button[type="button"] {
+    width: 100%;
+    line-height: 30px;
+    background: #f3cf77;
+    border: 1px solid #8e8e8e;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button[type="button"] i {
+    display: inline-block;
+    font-size: 1rem;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+    padding: 5px;
+    color: #fff;
+    background: #171722;
+    border-radius: 4px;
+
+}
+
+button[type="button"]:hover {
+    background: #eebf47;
+    cursor: pointer;
+}
+
+button[type="button"].naranja {
+    background: #ee9c3a;
+}
+
+button[type="button"].naranja:hover {
+    background: #eb9021;
+    cursor: pointer;
+}
+
+
+@keyframes presentacion {
+    0% {
+        position: absolute;
+        left: 0;
+        background: #f4e576;
+    }
+    100%{
+        left: 140%;
+        float: right;
+    }
+}
